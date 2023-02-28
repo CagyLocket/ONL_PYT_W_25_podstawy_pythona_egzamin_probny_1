@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %} Hated or favorite movies{% endblock %}
+
+{% block content %}
+
+
+    <h1 class="display-5 fw-bold text-center">Hated or favorite?</h1>
+    <h3 class=" text-center">Check your movie</h3>
+    <p class="text-center pt-4">
+        <a class="btn btn-primary btn-lg " href="{{ url_for('movies') }}">Let's go</a>
+    </p>
+
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %} Check movie {% endblock %}
+
+{% block content %}
+
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-4">
+            <form action="/movies" method="POST">
+                <div class="text-center">
+                    <h3 class="mb-2">Movie</h3>
+                </div>
+
+                <div class="">
+
+                    <div class="mb-3">
+                        <label for="movieTitle" class="form-label">Insert title</label>
+                        <input type="text" name="title" class="form-control" id="MovieTitle">
+                    </div>
+
+
+                    <div class="text-center mt-2">
+                        <button type="submit"
+                                class="btn btn-primary text-center" style="width: 100%">Check
+                        </button>
+                    </div>
+
+                    <div class="test-center">
+                        <h2 class="text-center mt-5 text-primary">{{ message }}</h2>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+</section>
+
+{% endblock %}
