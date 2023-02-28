@@ -4,6 +4,7 @@ def div(int_a, int_b):
 
     :param int_a: int as starting point of a range of numbers
     :param int_b: int as closing point of a range of numbers
+    :rtype: list
     :return: list of numbers that are divided by 2 but not by 3
     """
     output_list = []
@@ -13,7 +14,8 @@ def div(int_a, int_b):
     return output_list
 
 
-print(div(1, 20))
+if __name__ == '__main__':
+    print(div(1, 20))
 
 
 
